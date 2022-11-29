@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: hsl(210, 3%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+#pic {
+  width: 100px;
+  object-fit: contain;
+}
+#contain {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 150px;
+  width: 250px;
+  background-color: hsl(228, 45%, 44%);
+  border-radius: 9px;
+  border-top-right-radius: 80px;
+}
+#down {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 30px 0;
+}
+.loo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loo {
+  background-color: black;
+  height: 30px;
+  width: 35px;
+  border-radius: 5px;
+}
+#container {
+  height: 150px;
+  width: 350px;
+  background-color: hsl(228, 45%, 44%);
+  padding: 20px;
+  border-radius: 9px;
+  color: white;
+}
+#container {
+  position: relative;
+}
+
+#ranges {
+  height: 15px;
+  padding: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(37, 37, 42);
+  margin: 20px 0;
+}
+#ran {
+  background-color: orangered;
+  width: 70%;
+  height: 100%;
+  border-radius: 11px;
+  position: relative;
+}
+#hh::after {
+  content: "";
+  display: block;
+  /* position: absolute; */
+  width: 30px;
+  height: 30px;
+  border-left: 7px;
+  border-width: 8px;
+  background: red;
+}
+#white {
+  background-color: aliceblue;
+  width: 8px;
+  height: 7px;
+  border-radius: 50%;
+  top: 1px;
+  right: 2px;
+  position: absolute;
+}
+#con {
+  height: 50px;
+  width: 100px;
+  background-color: aliceblue;
+  color: black;
+  padding: 15px;
+  position: relative;
+  border-radius: 8px;
+  border-bottom-right-radius: 0px;
+}
+.left {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+}
+#con::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-width: 12px;
+  border-style: solid;
+  /* background: #000; */
+  bottom: -24px;
+  right: 0px;
+  border-color: white white transparent transparent;
+}
+
+.kio {
+  /* width: 20px; */
+  /* height: 20px; */
+  display: inline-block;
+  border-width: 20px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+#ope {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/bg-mobile.png);
+    background-size: cover;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  #contain {
+    width: 350px;
+  }
+  #container {
+    position: relative;
+  }
+  #con {
+    /* position: absolute;
+      bottom:10px;
+      right:90px; */
+    border-bottom-right-radius: 9px;
+  }
+  #con::after {
+    display: none;
+  }
+  .left {
+    top: auto;
+    bottom: -25px;
+    /* top: 0; */
+    right: calc(50% - 50px);
+  }
+}
+
